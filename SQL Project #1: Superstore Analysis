@@ -1,0 +1,18 @@
+SELECT *
+FROM superstore
+LIMIT 5;
+
+SELECT item_name, price
+FROM superstore
+ORDER BY price desc;
+
+SELECT AVG(price)
+FROM superstore;
+
+SELECT MAX(price)
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+
+SELECT AVG(average_rating)
+FROM superstore
+WHERE category = 'Electronics';
